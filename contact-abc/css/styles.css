@@ -1,3 +1,12 @@
+:root {
+    --border-left: 5px solid #CB4E0B;
+    --border-bottom: 3px solid #CB4E0B;
+    --interest-button: #CB4E0B;
+    --checked-interest-button: #CB4E0B;
+    --hover-send-button: #EA580C;
+    --send-button: #C2410C;
+
+}
 body {
     background-color: #F2F6FA;
     font-family: "Noto Sans Bhaiksuki", sans-serif;
@@ -5,4 +14,29 @@ body {
 
 .container {
     padding: 0 1rem;
+    margin: 0 auto; 
 }
+/* style */
+
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    border-left: var(--border-left);
+    padding-left: .25rem;
+    border-bottom: var(--border-bottom);
+    width: max-content; 
+    margin-bottom: 1.6875rem;
+}
+
+/* .inner-header-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.inner-header-container div,
+.inner-header-container img {
+    flex-basis: 300px;
+    flex-grow: 1;
+    max-inline-size: 100%;
+} */
