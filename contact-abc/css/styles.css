@@ -15,7 +15,7 @@ body {
 
 .container {
     padding: 0 1rem;
-    margin: 0 auto; 
+   
     
 }
 /* style */
@@ -37,16 +37,16 @@ p {
 }
 
 header {
-    margin-bottom: 2rem;
+    margin-bottom: 0; 
     padding-top: 3rem;
 }
 .inner-header-container p {
-    padding-bottom: 2rem;
+    padding-bottom: 2rem; 
 }
 .inner-header-container {
     display: flex;
     flex-wrap: wrap;
-    
+    margin-bottom: 0;
 }
 .inner-header-container div,
 .inner-header-container img {
@@ -60,6 +60,7 @@ form {
     background-color: white;
     box-shadow: var(--box-shadow);
     padding: 2rem 1rem;
+    
 }
 
 form label:not(input[type="radio"] + label, input[type="checkbox"] + label) {
@@ -83,6 +84,7 @@ fieldset {
     border: none;
     padding: 0;
     color: #666;
+    
 }
 div {
     margin-bottom: 2rem;
@@ -94,19 +96,16 @@ fieldset label:has(input[type="radio"]:checked) {
 }
 
 form fieldset:nth-of-type(1) label {
-    padding: 1.0625rem  3rem;
+    padding: 1.0625rem  1rem;
     border-radius: .5rem;
     border: var(--stroke);
     cursor: pointer;
     flex-grow: 1;
     flex-basis: calc((20rem - 100%) * 999);
- 
-    /* Constraints to keep items usable after the switch */
     min-inline-size: min(100%, 16rem);
     max-inline-size: 100%;
     text-align: center;
-    white-space: nowrap;
- 
+    white-space: nowrap; 
 }
 span {
     margin-right: 1.125rem;
