@@ -15,12 +15,8 @@ body {
 
 .container {
     padding: 0 1rem;
-   
-    
 }
 /* style */
-
-
 h2 {
     font-size: 1.75rem;
     font-weight: bold;
@@ -28,7 +24,7 @@ h2 {
     padding-left: .25rem;
     border-bottom: var(--border-bottom);
     width: max-content; 
-    margin-bottom: 1.6875rem;
+    margin-bottom: 24px;
 }
 
 p {
@@ -36,31 +32,31 @@ p {
     line-height: 150%;
 }
 
-header {
-    margin-bottom: 0; 
-    padding-top: 3rem;
+section {
+    margin: 3rem 1rem;
 }
+
 .inner-header-container p {
     padding-bottom: 2rem; 
 }
+
 .inner-header-container {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
 }
+
 .inner-header-container div,
 .inner-header-container img {
     flex-basis: 300px;
     flex-grow: 1;
     max-inline-size: 100%;
-    
 } 
 
 form {
     background-color: white;
     box-shadow: var(--box-shadow);
-    padding: 2rem 1rem;
-    
+    padding: 2rem 1rem;    
 }
 
 form label:not(input[type="radio"] + label, input[type="checkbox"] + label) {
@@ -77,15 +73,14 @@ textarea {
     height: 3.25rem;
     padding: 1rem .75rem;
     width: 100%;
- 
 }
 
 fieldset {
     border: none;
     padding: 0;
     color: #666;
-    
 }
+
 div {
     margin-bottom: 2rem;
 }
@@ -101,20 +96,19 @@ form fieldset:nth-of-type(1) label {
     border: var(--stroke);
     cursor: pointer;
     flex-grow: 1;
-    flex-basis: calc((20rem - 100%) * 999);
-    min-inline-size: min(100%, 16rem);
+    flex-basis: calc((40rem - 100%) * 999);
+    min-inline-size: min(100%, 12rem);
     max-inline-size: 100%;
     text-align: center;
     white-space: nowrap; 
-}
-span {
-    margin-right: 1.125rem;
-}
-
+} 
 fieldset>div {
     display: flex;
     flex-wrap: wrap;
-    gap: 2.5rem;
+    gap: 1.5rem;
+} 
+span {
+    margin-right: 1rem;
 }
 
 form textarea {
@@ -138,4 +132,64 @@ input[type="submit"]:hover {
     background-color: var(--hover-send-button);
     letter-spacing: .5rem;
    
+}
+
+@media (min-width:75rem) {
+    .container {
+        display: flex;
+        gap: 2.5rem;
+        max-width: 97.5rem;
+    }
+ 
+    header {
+        flex: 0 0 30%;
+    }
+ 
+    form {
+        flex-basis: 0;
+        flex-grow: 999;
+        min-inline-size: 50%;
+    }
+    
+form fieldset:nth-of-type(1) label {
+    padding: 1.0625rem  1rem;
+    border-radius: .5rem;
+    border: var(--stroke);
+    cursor: pointer;
+    flex-grow: 1;
+    flex-basis: 45%;
+    min-inline-size: min(100%, 12rem);
+    max-inline-size: 100%;
+    text-align: center;
+    white-space: nowrap; 
+} 
+}
+@media (min-width:103.75rem) {
+    .container {
+        display: flex;
+        gap: 2.5rem;
+    }
+ 
+    header {
+        flex: 0 0 30%;
+    }
+ 
+    form {
+        flex-basis: 0;
+        flex-grow: 999;
+        min-inline-size: 50%;
+    }
+form fieldset:nth-of-type(1) label {
+    padding: 1.0625rem  1rem;
+    border-radius: .5rem;
+    border: var(--stroke);
+    cursor: pointer;
+    flex-grow: 1;
+    flex-basis: 20%;
+    min-inline-size: min(100%, 12rem);
+    max-inline-size: 100%;
+    text-align: center;
+    white-space: nowrap; 
+}     
+
 }
